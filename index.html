@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex active ">
+        <a href="#" class="company-logo" onclick="reload()">
+            <img src="Screenshot 2023-11-06 195111.png" alt="company logo">
+        </a>
+        <div class="nav-links ">
+            <ul class="flex nav-lists">
+                <li class="hover-link nav-item" id="sports" onclick="navitemclick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="finance" onclick="navitemclick('finance')">Finance</li>
+                <li class="hover-link nav-item"id="politics" onclick="navitemclick('politics')">Politics</li>
+                <li class="hover-link nav-item"id="entertainment" onclick="navitemclick('entertainment')">Entertainment</li>
+                <li class="hover-link nav-item"id="Technology" onclick="navitemclick('Technology')">Technology</li>
+                <li class="hover-link nav-item"id="Science" onclick="navitemclick('Science')">Science</li>
+                <li class="hover-link nav-item"id="Business" onclick="navitemclick('Business')">Business</li>
+                <li class="hover-link nav-item"id="Random" onclick="navitemclick('Random')">Random</li>
+            </ul>
+        </div>
+      
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g Science ">
+            <button class="search-btn  " id="search-button">Search</button>
+        </div>
+        <div class="mobile-navbar">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline"  class="mobile-nav-icon"></ion-icon>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+  <div class="card-container container flex" id="cards-container">
+    
+    </div>
+    
+  </div>
+  </main>
+  <template id="template-news_card"><div class="card">
+    <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+    </div>
+    <div class="card-content">
+        <h3 id="news-title">This is the Title</h3>
+        <h6 class="news-source" id="news-source">end  gadget26/08/2023</h6>
+        <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim soluta asperiores.</p>
+    </div></template>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
